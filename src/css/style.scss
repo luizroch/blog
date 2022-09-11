@@ -6,6 +6,7 @@
 
 @import 'sass/colors';
 @import 'sass/typography';
+@import 'sass/spacing';
 
 body{
     width: 100%;
@@ -14,3 +15,56 @@ body{
 }
 
 @import 'sass/layout';
+
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.mySwiper{
+    overflow: visible !important;
+    cursor: grab;
+}
+
+.mySwiper:active{
+    cursor: grabbing;
+}
+
+.swiper-pagination{
+    position: absolute;
+    top: 20px;
+    z-index: 999 !important;
+}
+
+.swiper-pagination-bullet{
+    background: #ffffff !important;
+    transition: all .5s;
+}
+
+.swiper-pagination-bullet-active{
+    width: 15px !important;
+    border-radius: 3px !important;
+    transition: all .5s;
+}
+
+.swiper-button-prev{
+    content: url("https://seudominio.com/icone-prev.svg");
+    background-image: none;
+    top: -50px !important;
+    right: 60px !important;
+    left: inherit !important;
+    position: absolute;
+    z-index: 999;
+    transition: all .5s;
+}
+
+.swiper-button-next{
+    content: url("https://seudominio.com/icone-next.svg");
+    background-image: none;
+    top: -50px !important;
+    right: 0px !important;
+    left: inherit !important;
+    position: absolute;
+    z-index: 999;
+    transition: all .5s;
+}
